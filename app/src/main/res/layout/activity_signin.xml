@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_signin">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_logo_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_horizontal_30"
+        app:layout_constraintEnd_toStartOf="@+id/text_app_name_blood"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_app_name_blood"
+        style="@style/TextViewAppLogo"
+        android:layout_marginStart="10dp"
+        android:text="Blood"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_horizontal_30"
+        app:layout_constraintEnd_toStartOf="@+id/text_app_name_donor"
+        app:layout_constraintStart_toEndOf="@+id/image_logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_app_name_donor"
+        style="@style/TextViewAppLogo"
+        android:text="Donor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_horizontal_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_app_name_blood"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_horizontal_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:background="#44ffffff"
+        android:drawableLeft="@drawable/ic_person"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:maxLength="100"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/edittext_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_horizontal_30" />
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:background="#44ffffff"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/ic_padlock"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="100"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_username" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_horizontal_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <Button
+        style="@style/BloodDonorButtonActive"
+        android:text="@string/sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_horizontal_60" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

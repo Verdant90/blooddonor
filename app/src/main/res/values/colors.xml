@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">@color/salmon_pink</color>
+    <color name="primary_dark">@color/black</color>
+    <color name="accent">@color/aqua</color>
+    <color name="gray">#ffdfdfdf</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="aqua">#84DCC6</color>
+    <color name="mint">#A5FFD6</color>
+    <color name="salmon_pink">#FFA69E</color>
+    <color name="pastel_red">#ff686b</color>
+    <color name="black_light">#5a595b</color>
+    <color name="red">#F45B22</color>
+
+</resources>
