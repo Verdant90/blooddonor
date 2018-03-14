@@ -170,6 +170,8 @@ dependencies {
     testCompile "org.hamcrest:hamcrest-library:$HAMCREST_VERSION"
     testCompile "org.hamcrest:hamcrest-integration:$HAMCREST_VERSION"
     testCompile 'org.robolectric:robolectric:3.3'
+
+    implementation 'com.facebook.android:facebook-login:4.31.0'
 }
 
 // Log out test results to console
